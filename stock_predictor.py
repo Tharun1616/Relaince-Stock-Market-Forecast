@@ -14,8 +14,10 @@ import matplotlib.pyplot as plt
 from pandas.tseries.offsets import BDay
 from statsmodels.tsa.holtwinters import Holt
 from statsmodels.tsa.holtwinters import ExponentialSmoothing
-import fbprophet as fbp
-from fbprophet.plot import plot_plotly, plot_components_plotly
+from prophet import Prophet
+from prophet.plot import plot_plotly, plot_components_plotly
+#import fbprophet as fbp
+#from fbprophet.plot import plot_plotly, plot_components_plotly
 import os
 
 
@@ -230,8 +232,10 @@ if forecast_box:
             First_Five_Days(forecast_df)
 
     if selected_model == 'FBPROPHET':
-        fb_model_tot = fbp.Prophet(daily_seasonality=True)
+        fb_model_tot = Prophet()
         fb_model_tot.fit(stocks_df_fb)
+        #fb_model_tot = fbp.Prophet(daily_seasonality=True)
+        #fb_model_tot.fit(stocks_df_fb)
         future = fb_model_tot.make_future_dataframe(periods=period)
         fb_predict = fb_model_tot.predict(future)
         st.markdown('#')
