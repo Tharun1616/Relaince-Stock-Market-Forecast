@@ -10,3 +10,5 @@ Quick peek through the app 👀
 
 ![part-1-stock](https://github.com/Tharun1616/Relaince-Stock-Market-Forecast/assets/72075661/3dc23f34-140c-44ca-b426-40b01b572827)
 ![part-2-stock](https://github.com/Tharun1616/Relaince-Stock-Market-Forecast/assets/72075661/8c8a4621-c9eb-4891-b9bc-8fbfdc26f85f)
+
+### To Run the app : [👉🏻 Click here 👈🏻](https://tharun1616-relaince-stock-market-forecas-stock-predictor-r61drd.streamlit.app/)
